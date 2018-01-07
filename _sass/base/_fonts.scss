@@ -1,8 +1,7 @@
 @font-face {
   font-family: "King Basil";
-  src: url("{{ site.baseurl }}/fonts/king_basil_lite-webfont.woff2")
-      format("woff2"),
-    url("{{ site.baseurl }}/fonts/king_basil_lite-webfont.woff") format("woff");
+  src: url("/xlr8/fonts/king_basil_lite-webfont.woff2") format("woff2"),
+    url("/xlr8/fonts/king_basil_lite-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

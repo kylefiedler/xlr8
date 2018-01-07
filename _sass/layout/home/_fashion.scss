@@ -1,6 +1,6 @@
 .fashion {
   background-color: $gold;
-  background-image: url("{{ site.baseurl }}/images/fashion.jpg");
+  background-image: url("/xlr8/images/fashion.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -29,7 +29,7 @@
       position: absolute;
       z-index: 0;
       content: "";
-      background-image: url("{{ site.baseurl }}/images/zigzag-pattern.png");
+      background-image: url("/xlr8/images/zigzag-pattern.png");
       display: block;
 
       @media screen and (min-width: 940px) {
