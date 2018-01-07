@@ -1,6 +1,6 @@
 .screenprinting {
   background-color: $teal;
-  background-image: url("/images/wood-background.png");
+  background-image: url("{{ site.baseurl }}/images/wood-background.png");
   padding-top: 20vh;
   padding-bottom: $large-spacing;
   position: relative;

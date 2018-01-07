@@ -1,6 +1,6 @@
 .hero {
   background-color: $gold;
-  background-image: url("/images/hero.png");
+  background-image: url("{{ site.baseurl }}/images/hero.png");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -45,7 +45,7 @@
       opacity: 0.15;
       z-index: 0;
       content: "";
-      background-image: url("/images/hexagonal-pattern.png");
+      background-image: url("{{ site.baseurl }}/images/hexagonal-pattern.png");
       display: block;
     }
   }
