@@ -1,0 +1,52 @@
+.hero {
+  background-color: $gold;
+  background-image: url("/images/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 60vh;
+  }
+
+  .content-block {
+    margin: 0;
+
+    @media screen and (min-width: 800px) {
+      width: 80%;
+    }
+
+    @media screen and (min-width: 1000px) {
+      width: 60%;
+    }
+
+    .content-block__inner {
+      margin-bottom: -$large-spacing;
+      margin-right: $base-spacing;
+      margin-left: $base-spacing;
+      margin-top: $base-spacing;
+
+      @media screen and (min-width: 1000px) {
+        margin-bottom: -$large-spacing;
+        margin-right: $large-spacing;
+        margin-left: $large-spacing;
+        margin-top: $large-spacing;
+      }
+    }
+
+    &:before {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      opacity: 0.15;
+      z-index: 0;
+      content: "";
+      background-image: url("/images/hexagonal-pattern.png");
+      display: block;
+    }
+  }
+}

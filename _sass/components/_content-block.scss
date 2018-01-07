@@ -1,0 +1,24 @@
+.content-block {
+  position: relative;
+  margin: $base-spacing;
+
+  @media screen and (min-width: 800px) {
+    margin: 0;
+    width: 70%;
+  }
+
+  @media screen and (min-width: 1000px) {
+    width: 50%;
+  }
+}
+
+.content-block__inner {
+  background-color: #fff;
+  padding: $base-spacing;
+  position: relative;
+  z-index: 1;
+
+  @media screen and (min-width: 800px) {
+    padding: $base-spacing $large-spacing $large-spacing;
+  }
+}

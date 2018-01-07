@@ -1,0 +1,42 @@
+.fashion {
+  background-color: $gold;
+  background-image: url("/images/fashion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container {
+    display: flex;
+    min-height: 60vh;
+    align-items: flex-end;
+
+    @media screen and (max-width: 940px) {
+      justify-content: center;
+    }
+  }
+
+  .content-block {
+    margin: $base-spacing $base-spacing 0;
+
+    @media screen and (min-width: 940px) {
+      margin: $large-spacing $large-spacing 0;
+    }
+
+    &:before {
+      top: -$base-spacing;
+      right: -$base-spacing;
+      left: -$base-spacing;
+      bottom: 0;
+      position: absolute;
+      z-index: 0;
+      content: "";
+      background-image: url("/images/zigzag-pattern.png");
+      display: block;
+
+      @media screen and (min-width: 940px) {
+        top: -$large-spacing;
+        right: -$large-spacing;
+        left: -$large-spacing;
+      }
+    }
+  }
+}

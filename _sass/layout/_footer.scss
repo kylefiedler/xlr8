@@ -1,0 +1,70 @@
+.site-footer {
+  background-color: #f9f8fa;
+  margin-top: $large-spacing;
+  padding-top: $large-spacing;
+
+  a {
+    color: #7e7c87;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      color: $teal;
+    }
+  }
+
+  h4 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    a {
+      color: $dark-teal;
+    }
+  }
+}
+
+.bottom-level__list,
+.top-level__list {
+  display: flex;
+  justify-content: space-between;
+  padding: $base-spacing;
+
+  @media screen and (max-width: 1100px) {
+    flex-wrap: wrap;
+  }
+
+  > li {
+    flex-grow: 1;
+
+    @media screen and (max-width: 1100px) {
+      margin-bottom: $large-spacing;
+      min-width: 240px;
+    }
+  }
+
+  .news,
+  .nav-secondary__footer {
+    flex-grow: 2;
+
+    li {
+      display: inline-block;
+      margin-right: $base-spacing;
+    }
+  }
+}
+
+.bottom-level {
+  &:before {
+    display: block;
+    width: 35%;
+    margin: $large-spacing auto;
+    content: "";
+    background-color: $light-gray;
+    height: 2px;
+  }
+
+  .logo {
+    width: 160px;
+    height: 160px;
+  }
+}

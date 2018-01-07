@@ -1,0 +1,108 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  background-repeat: repeat-x;
+  background-position: center 200px;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+
+  @media screen and (min-width: 600px) {
+    background-position: center 250px;
+  }
+
+  @media screen and (min-width: 600px) {
+    background-position: center 180px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  color: $dark-teal;
+  margin: 0 0 0.5rem;
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 1.1;
+  margin-bottom: $base-spacing;
+  font-family: $heading-font-family;
+
+  @media screen and (min-width: 800px) {
+    font-size: 78px;
+  }
+}
+
+h2 {
+  font-size: 28px;
+  font-family: $heading-font-family;
+
+  @media screen and (min-width: 800px) {
+    font-size: 36px;
+  }
+}
+
+h3 {
+  font-family: $sub-heading-font-family;
+  font-size: 22px;
+  color: $teal;
+  line-height: 1.2;
+
+  @media screen and (min-width: 800px) {
+    font-size: 28px;
+  }
+}
+
+h4 {
+  font-weight: bold;
+  font-size: $base-font-size;
+  margin-bottom: 0;
+}
+
+h5 {
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 15px;
+  color: $text-color;
+  margin: 0 0 ($base-spacing / 2);
+}
+
+a {
+  color: inherit;
+
+  &:active,
+  &:focus,
+  &:hover {
+  }
+}
+
+img {
+  margin: 0;
+  max-width: 100%;
+}
+
+blockquote {
+  margin: $large-spacing 0 1em;
+  font-family: $heading-font-family;
+  font-size: 20px;
+  border-top: $large-border;
+  padding-top: $base-spacing;
+}
+
+cite {
+  font-size: $base-font-size;
+  font-style: italic;
+}

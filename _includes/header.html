@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{{ site.description }}">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="stylesheet" href="https://use.typekit.net/vxj0qcx.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/stylesheets/application.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    <script type="text/javascript" src="{{ site.baseurl }}/javascript/site.js"></script>
+  </head>
+
+  <body>
+    <header class="site-header container">
+      <h1 class="header-logo">
+        <a href="/">
+          {% include xlr8-logo.svg %}
+        </a>
+      </h1>
+
+      <nav>
+        <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+          {% include menu.svg %}
+        </a>
+        <div id="js-navigation-menu" class="navigation-menu show">
+          <div class="nav-secondary__container">
+            <ul class="social-nav">
+              <li>
+                <a href="https://www.instagram.com/">
+                  {% include insta.svg %}
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com//">
+                  {% include facebook.svg %}
+                </a>
+              </li>
+              <li>
+                <a href="https://yelp.com/">
+                  {% include yelp.svg %}
+                </a>
+              </li>
+              <li>
+                <a href="https://pintrest.com/">
+                  {% include pintrest.svg %}
+                </a>
+              </li>
+            </ul>
+            <ul class="nav-secondary">
+              <li><a href="/about">About</a></li>
+              <li><a href="/locations">Locations &amp; Contact</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/cart">Cart</a></li>
+            </ul>
+          </div>
+          <ul class="nav-primary">
+            <li><a href="">Screenprinting &amp; Embroidery</a></li>
+            <li><a href="">Home Goods &amp; Gifts</a></li>
+            <li><a href="">Fashion &amp; Spiritgear</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>

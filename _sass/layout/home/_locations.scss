@@ -1,0 +1,30 @@
+.locations {
+  max-width: 1050px;
+  padding-top: $large-spacing;
+}
+
+.locations__list {
+  @media screen and (min-width: 580px) {
+    display: flex;
+  }
+
+  li {
+    padding: $small-spacing;
+
+    @media screen and (min-width: 580px) {
+      width: 50%;
+    }
+  }
+
+  iframe {
+    width: 100%;
+  }
+}
+
+.location__details {
+  padding: $base-spacing;
+
+  h4 {
+    margin-bottom: $small-spacing;
+  }
+}
