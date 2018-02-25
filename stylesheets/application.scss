@@ -10,6 +10,7 @@
 @import "components/button";
 @import "components/inverse-content-block";
 @import "components/content-block";
+@import "components/wood-grain";
 
 @import "layout/header";
 @import "layout/footer";
@@ -20,3 +21,6 @@
 @import "layout/home/fashion";
 @import "layout/home/locations";
 @import "layout/home/insta-feed";
+
+@import "layout/locations/contact-form";
+@import "layout/about/about";

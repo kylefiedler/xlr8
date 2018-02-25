@@ -1,0 +1,15 @@
+.contact-form {
+  max-width: 1050px;
+  padding: $base-spacing;
+}
+
+.contact-form__layout {
+  @media screen and (min-width: 600px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div {
+    flex-basis: 48%;
+  }
+}

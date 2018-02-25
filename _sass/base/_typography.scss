@@ -66,8 +66,10 @@ h3 {
 
 h4 {
   font-weight: bold;
-  font-size: $base-font-size;
-  margin-bottom: 0;
+  font-size: 15px;
+  margin-bottom: $small-spacing;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 h5 {

@@ -1,12 +1,13 @@
 .button {
-  font-family: $sub-heading-font-family;
   background-color: $gold;
-  padding: $x-small-spacing $small-spacing;
   border-radius: $base-border-radius;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 18px;
+  border: none;
   color: #fff;
-  text-decoration: none;
+  font-family: $sub-heading-font-family;
+  font-size: 18px;
+  letter-spacing: 1px;
   line-height: 1;
+  padding: $small-spacing;
+  text-decoration: none;
+  text-transform: uppercase;
 }

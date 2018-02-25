@@ -1,0 +1,10 @@
+.purpose,
+.about {
+  display: flex;
+  padding: $large-spacing;
+  justify-content: space-between;
+
+  .column {
+    flex-basis: 48%;
+  }
+}

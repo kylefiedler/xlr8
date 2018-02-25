@@ -1,8 +1,10 @@
+.our-family,
 .locations {
   max-width: 1050px;
   padding-top: $large-spacing;
 }
 
+.our-family__list,
 .locations__list {
   @media screen and (min-width: 580px) {
     display: flex;

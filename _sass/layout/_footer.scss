@@ -14,9 +14,6 @@
   }
 
   h4 {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-
     a {
       color: $dark-teal;
     }
@@ -38,17 +35,19 @@
 
     @media screen and (max-width: 1100px) {
       margin-bottom: $large-spacing;
-      min-width: 240px;
     }
   }
+}
 
-  .news,
-  .nav-secondary__footer {
-    flex-grow: 2;
+.social-footer {
+  margin-bottom: $small-spacing;
 
-    li {
-      display: inline-block;
-      margin-right: $base-spacing;
+  li {
+    display: inline-block;
+    margin-right: $small-spacing;
+
+    path {
+      fill: $dark-teal;
     }
   }
 }

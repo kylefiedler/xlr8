@@ -1,14 +1,45 @@
 .hero {
   background-color: $gold;
-  background-image: url("/xlr8/images/hero.png");
   background-repeat: no-repeat;
   background-size: cover;
+
+  &.home-hero {
+    background-image: url("/images/hero.png");
+
+    .container {
+      min-height: 60vh;
+    }
+  }
+
+  &.about-hero {
+    background-image: url("/images/about-hero.jpg");
+
+    .container {
+      min-height: 30vh;
+      justify-content: flex-start;
+    }
+
+    .content-block__inner {
+      padding-bottom: 0;
+    }
+  }
+
+  &.locations-hero {
+    background-image: url("/images/locations-hero.jpg");
+
+    .container {
+      min-height: 30vh;
+    }
+
+    .content-block__inner {
+      padding-bottom: 0;
+    }
+  }
 
   .container {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    min-height: 60vh;
   }
 
   .content-block {
@@ -22,20 +53,6 @@
       width: 60%;
     }
 
-    .content-block__inner {
-      margin-bottom: -$large-spacing;
-      margin-right: $base-spacing;
-      margin-left: $base-spacing;
-      margin-top: $base-spacing;
-
-      @media screen and (min-width: 1000px) {
-        margin-bottom: -$large-spacing;
-        margin-right: $large-spacing;
-        margin-left: $large-spacing;
-        margin-top: $large-spacing;
-      }
-    }
-
     &:before {
       top: 0;
       left: 0;
@@ -45,8 +62,22 @@
       opacity: 0.15;
       z-index: 0;
       content: "";
-      background-image: url("/xlr8/images/hexagonal-pattern.png");
+      background-image: url("/images/hexagonal-pattern.png");
       display: block;
+    }
+  }
+
+  .content-block__inner {
+    margin-bottom: -$large-spacing;
+    margin-right: $base-spacing;
+    margin-left: $base-spacing;
+    margin-top: $base-spacing;
+
+    @media screen and (min-width: 1000px) {
+      margin-bottom: -$large-spacing;
+      margin-right: $large-spacing;
+      margin-left: $large-spacing;
+      margin-top: $large-spacing;
     }
   }
 }
